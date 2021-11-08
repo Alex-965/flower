@@ -1,0 +1,87 @@
+@mixin container($conWidth, $mar) {
+    width: $conWidth;
+    margin: $mar;
+}
+
+@mixin body($dis, $gridRow, $pad, $gap) {
+    display: $dis;
+    grid-template-rows: $gridRow;
+    padding: $pad;
+    gap: $gap;
+}
+
+@mixin header($dis, $gridCol, $alignItems) {
+    display: $dis;
+    grid-template-columns: $gridCol;
+    align-items: $alignItems;
+}
+
+@mixin info($dis, $jusCon, $gap) {
+    display: $dis;
+    justify-content: $jusCon;
+    gap: $gap;
+}
+
+@mixin list-items($dis, $marRight, $gap) {
+    display: $dis;
+    margin-right: $marRight;
+    gap: $gap;
+}
+
+@mixin titles($fontFam, $col, $fontSize) {
+    font-family: $fontFam;
+    color: $col;
+    font-size: $fontSize;
+}
+
+@mixin input($width, $height, $pad, $col, $fontSize, $bg) {
+    width: $width;
+    height: $height;
+    padding: $pad;
+    color: $col;
+    font-size: $fontSize;
+    background: $bg;
+}
+
+@mixin banner($pad, $bg, $bgSize, $height) {
+    padding: $pad;
+    background: $bg;
+    background-size: $bgSize;
+    height: $height;
+}
+
+@mixin production($dis, $grid, $gap) {
+    display: $dis;
+    grid: $grid;
+    gap: $gap;
+}
+
+@mixin list($pad, $dis, $flexDir, $textAlign, $bg) {
+    padding: $pad;
+    display: $dis;
+    flex-direction: $flexDir;
+    text-align: $textAlign;
+    background: $bg;
+}
+
+@mixin h($fontWeight, $mar, $fontFam) {
+    font-weight: $fontWeight;
+    margin: $mar;
+    font-family: $fontFam;
+}
+
+@mixin p($bg, $pad, $width, $col, $alSelf, $marTop) {
+    background: $bg;
+    padding: $pad;
+    width: $width;
+    color: $col;
+    align-self: $alSelf;
+    margin-top: $marTop;
+}
+
+@mixin more($bor, $pad, $width, $textAlign) {
+    border: $bor;
+    padding: $pad;
+    width: $width;
+    text-align: $textAlign;
+}

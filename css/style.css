@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  list-style-type: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  padding: 50px 0px 0px 0px;
+  gap: 50px;
+  background: #E5E5E5;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  font-family: "Merriweather", serif;
+  color: #59313B;
+  font-size: 1em;
+}
+
+.header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 50px;
+}
+
+.user-navigarion-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 200px;
+  gap: 35px;
+}
+
+.user-navigarion-items a {
+  color: #40393B;
+  text-decoration: none;
+}
+
+.user-navigarion-items a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto 1fr auto;
+      grid-template-rows: auto auto 1fr auto;
+  padding: 0px 0px 50px 0px;
+  gap: 50px;
+}
+
+.main .banner {
+  padding: 140px 0px 0px 110px;
+  background: url(../img/image-1);
+  background-size: cover;
+  height: 350px;
+}
+
+.main .banner h1 {
+  font-family: "Merriweather", serif;
+  color: #59313B;
+  font-size: 50px;
+}
+
+.main .filter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.main .filter input {
+  width: 380px;
+  height: 60px;
+  padding: 20px;
+  color: #40393B;
+  font-size: 18px;
+  background: #E5E5E5;
+}
+
+.production .list-items {
+  display: -ms-grid;
+  display: grid;
+  grid: 1fr 1fr 1fr/1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.production .list-items .list-item {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: white;
+}
+
+.production .list-items .list-item h3 {
+  font-weight: 300;
+  margin: 20px;
+  font-family: "Merriweather", serif;
+}
+
+.production .list-items .list-item p:last-child {
+  background: #59313B;
+  padding: 10px 20px;
+  width: 170px;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+}
+
+.production .list-items .list-item p:last-child:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  text-decoration: underline;
+}
+
+.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0px;
+}
+
+.more p {
+  border: 1px solid black;
+  padding: 25px;
+  width: 380px;
+  text-align: center;
+}
+
+.more p:hover {
+  background: white;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border: 0px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  background: #DED9D5;
+  width: 100%;
+  height: 200px;
+}
+
+.footer .last {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .last .logo {
+  font-family: "Merriweather", serif;
+  color: #59313B;
+  font-size: 1em;
+}
+
+.footer .last .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.user-navigarion-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0px;
+  gap: 35px;
+}
+
+.user-navigarion-list-items a {
+  color: #40393B;
+  text-decoration: none;
+}
+
+.user-navigarion-list-items a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */
