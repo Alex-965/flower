@@ -10,7 +10,7 @@
 }
 
 .container {
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ body {
   background: #E5E5E5;
 }
 
-.header {
+.header_row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
@@ -34,20 +34,20 @@ body {
           align-items: center;
 }
 
-.header .logo {
+.header_row .logo {
   font-family: "Merriweather", serif;
   color: #59313B;
   font-size: 1em;
 }
 
-.header .info {
+.header_row .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 50px;
+  gap: 30px;
 }
 
 .user-navigarion-items {
@@ -101,12 +101,12 @@ body {
 }
 
 .main .filter input {
-  width: 380px;
   height: 60px;
   padding: 20px;
   color: #40393B;
   font-size: 18px;
   background: #E5E5E5;
+  width: 100%;
 }
 
 .production .list-items {
@@ -147,8 +147,8 @@ body {
 }
 
 .production .list-items .list-item p:last-child:hover {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   text-decoration: underline;
@@ -174,22 +174,19 @@ body {
 .more p:hover {
   background: white;
   text-decoration: underline;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   border: 0px;
 }
 
 .footer {
-  display: -ms-grid;
-  display: grid;
   background: #DED9D5;
-  width: 100%;
-  height: 200px;
+  padding: 100px;
 }
 
-.footer .last {
+.footer_row {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto auto;
@@ -202,20 +199,20 @@ body {
           justify-content: space-between;
 }
 
-.footer .last .logo {
+.footer_row .logo {
   font-family: "Merriweather", serif;
   color: #59313B;
   font-size: 1em;
 }
 
-.footer .last .social-links {
+.footer_row .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
 }
 
-.user-navigarion-list-items {
+.user-navigation-list-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,12 +220,12 @@ body {
   gap: 35px;
 }
 
-.user-navigarion-list-items a {
+.user-navigation-list-items a {
   color: #40393B;
   text-decoration: none;
 }
 
-.user-navigarion-list-items a:hover {
+.user-navigation-list-items a:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

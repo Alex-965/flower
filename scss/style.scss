@@ -19,7 +19,7 @@ body {
     background: #E5E5E5;
 }
 
-.header {
+.header_row {
     @include header(grid, auto auto auto, center);
 
     .logo {
@@ -27,7 +27,7 @@ body {
     }
 
     .info {
-        @include info(flex, flex-end, 50px);
+        @include info(flex, flex-end, 30px)
     }
 }
 
@@ -60,7 +60,8 @@ body {
         gap: 50px;
 
         input {
-            @include input(380px, 60px, 20px, $textColor, 18px, #E5E5E5);
+            @include input(60px, 20px, $textColor, 18px, #E5E5E5);
+            width: 100%;
         }
     }
 }
@@ -81,7 +82,7 @@ body {
                 @include p($mainColor, 10px 20px, 170px, white, center, 20px);
 
                 &:hover {
-                    transition: 1s;
+                    transition: 0.3s;
                     transform: scale(1.2);
                     text-decoration: underline;
                 }
@@ -99,7 +100,7 @@ body {
         &:hover {
             background: white;
             text-decoration: underline;
-            transition: 0.5s;
+            transition: 0.3s;
             transform: scale(1.2);
             border: 0px;
         }
@@ -107,26 +108,26 @@ body {
 }
 
 .footer {
-    display: grid;
     background: #DED9D5;
-    width: 100%;
-    height: 200px;
+    padding: 100px;
+}
 
-    .last {
-        @include header(grid, auto auto auto, center);
-        justify-content: space-between;
+.footer_row {
+    @include header(grid, auto auto auto, center);
+    justify-content: space-between;
+    
 
-        .logo {
-            @include titles($titleFont, $mainColor, 1em);
-        }
-        .social-links{
-            display: flex;
-            gap: 25px
-        }
+    .logo {
+        @include titles($titleFont, $mainColor, 1em);
+    }
+
+    .social-links {
+        display: flex;
+        gap: 25px
     }
 }
 
-.user-navigarion-list-items {
+.user-navigation-list-items {
     @include list-items(flex, 0px, 35px);
 
     a {

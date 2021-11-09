@@ -1,5 +1,5 @@
 @mixin container($conWidth, $mar) {
-    width: $conWidth;
+    max-width: $conWidth;
     margin: $mar;
 }
 
@@ -16,9 +16,9 @@
     align-items: $alignItems;
 }
 
-@mixin info($dis, $jusCon, $gap) {
+@mixin info($dis, $jc,$gap) {
     display: $dis;
-    justify-content: $jusCon;
+    justify-content: $jc;
     gap: $gap;
 }
 
@@ -34,8 +34,7 @@
     font-size: $fontSize;
 }
 
-@mixin input($width, $height, $pad, $col, $fontSize, $bg) {
-    width: $width;
+@mixin input($height, $pad, $col, $fontSize, $bg) {
     height: $height;
     padding: $pad;
     color: $col;
